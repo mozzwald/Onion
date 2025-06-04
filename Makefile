@@ -195,6 +195,8 @@ external: $(CACHE)/.setup $(THIRD_PARTY_DIR)/RetroArch-patch/bin/retroarch_miyoo
 	@cd $(THIRD_PARTY_DIR)/Terminal && make && cp ./st "$(BIN_DIR)"
 	@$(ECHO) $(COLOR_BLUE)"\n-- Build DinguxCommander"$(COLOR_NORMAL)
 	@cd $(THIRD_PARTY_DIR)/DinguxCommander && make && cp ./output/DinguxCommander "$(PACKAGES_APP_DEST)/File Explorer (DinguxCommander)/App/Commander_Italic"
+	@$(ECHO) $(COLOR_BLUE)"\n-- Build libretro-atari800"$(COLOR_NORMAL)
+	@cd $(THIRD_PARTY_DIR)/libretro-atari800 && make platform="miyoo" && cp ./atari800_libretro.so "$(BIN_DIR)/RetroArch/.retroarch/cores"
 
 dist: build
 	@$(ECHO) $(PRINT_RECIPE)

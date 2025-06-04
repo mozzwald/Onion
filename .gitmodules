@@ -11,7 +11,6 @@
 	path = third-party/RetroArch-patch
 	url = https://github.com/OnionUI/RetroArch-patch
 [submodule "third-party/libretro-atari800"]
-    path = third-party/libretro-atari800
-    url = https://github.com/mozzwald/libretro-atari800.git
-    branch = netsio
-	
+	path = third-party/libretro-atari800
+	url = https://github.com/mozzwald/libretro-atari800
+	branch = netsio
